@@ -5,7 +5,7 @@ import axios from "axios";
 import "./index.css";
 import { Auth0Provider } from "@auth0/auth0-react";
 
-axios.defaults.baseURL = "http://localhost:8001/api/routes";
+axios.defaults.baseURL = import.meta.env.VITE_AXIOS_URL;
 
 const Auth0Domain = import.meta.env.VITE_AUTH0_DOMAIN;
 const Auth0ClientId = import.meta.env.VITE_AUTH0_CLIENT_ID;
